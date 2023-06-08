@@ -26,5 +26,5 @@ Integrantes:
 </div>
 
 <p align="center">
-<img align="center" src="[https://giphy.com/embed/3oKIPnAiaMCws8nOsE](https://www.reddit.com/r/CatGifs/comments/640py3/meet_the_new_it_guy_xpost_raww/?st=j180my0k&sh=2230295e)" alt="catCoding" width="250"/>
+<img align="center" src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="catCoding" width="250"/>
 </p>
