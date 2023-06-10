@@ -6,7 +6,6 @@ Los servicios web RESTful se han convertido en una forma popular de crear y cons
 
 <br>
 [**`Siguiente`** -> Sesión 03](../Sesion3)
-
 [**`Anterior`** -> Sesión 01](../Sesion1)
 <br>
 
