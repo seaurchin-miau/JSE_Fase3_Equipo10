@@ -4,9 +4,19 @@ Las pruebas unitarias con Spring Boot y JUnit 5 son una herramienta esencial en 
 
 <img align="right" src="https://mkyong.com/wp-content/uploads/2019/02/spring-boot-junit5-logo.png" width="600"/>
 
+## Contenidos de la sesión:
+
+| **Ejemplos**                          | **Retos**                    |
+|---------------------------------------|------------------------------|
+| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
+| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
+| [Ejemplo 3](./work/Ejemplos/Ejemplo3) |  |
+
+
 <br>
 
 [**`Siguiente`** -> Sesión 08](../Sesion8)
+
 [**`Anterior`** -> Sesión 06](../Sesion6)
 <br>
 

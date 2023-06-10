@@ -3,9 +3,20 @@ Spring MVC Validation es una funcionalidad esencial de Spring MVC que permite va
 
 <img align="right" src="https://cdn-icons-png.flaticon.com/512/5145/5145588.png" width="600"/>
 
+## Contenidos de la sesión:
+
+| **Ejemplos**                          | **Retos**                    |
+|---------------------------------------|------------------------------|
+| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
+| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
+| [Ejemplo 3](./work/Ejemplos/Ejemplo3) |  |
+
+
+
 <br>
 
 [**`Siguiente`** -> Sesión 04](../Sesion4)
+
 [**`Anterior`** -> Sesión 02](../Sesion2)
 <br>
 

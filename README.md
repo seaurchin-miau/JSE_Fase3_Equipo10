@@ -21,9 +21,8 @@ Integrantes:
 | [Sesión 4](./Sesion4) | Manejo de errores y negociación de contenido |          |
 | [Sesión 5](./Sesion5) |Project Lombok y MapStruct |    |
 | [Sesión 6](./Sesion6) |Spring Data JPA |         |
-| [Sesión 7](./Sesion7) |Pruebas unitarias con Spring Boot y Junit 5|                           |
+| [Sesión 7](./Sesion7) |Pruebas unitarias con Spring Boot y Junit 5|             |
 | [Sesión 8](./Sesion8) |Spring MVC RestDoc |              |
-</div>
 
-<p align="left"> <img align="right" src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="catCoding" width="250"/>
-</p>
+<img align="right" src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="catCoding" width="300"/>
+ </div>

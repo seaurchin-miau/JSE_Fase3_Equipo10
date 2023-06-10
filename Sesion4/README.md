@@ -5,9 +5,19 @@ Spring Framework ofrece una serie de componentes, como el Manejador de Excepcion
 
 <img align="right" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*w_iicbG7L3xEQTArjHUS6g.jpeg" width="600"/>
 
+## Contenidos de la sesión:
+
+| **Ejemplos**                          | **Retos**                    |
+|---------------------------------------|------------------------------|
+| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
+| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
+| [Ejemplo 3](./work/Ejemplos/Ejemplo3) |  |
+
+
 <br>
 
 [**`Siguiente`** -> Sesión 05](../Sesion5)
+
 [**`Anterior`** -> Sesión 03](../Sesion3)
 <br>
 

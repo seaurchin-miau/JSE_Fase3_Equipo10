@@ -4,9 +4,19 @@ Tanto Project Lombok como MapStruct son bibliotecas que permiten simplificar y a
 
 <img align="right" src="https://edekinathaniel.com/content/images/size/w960/2021/12/Screenshot-2021-12-19-at-05.47.38.png" width="600"/>
 
+## Contenidos de la sesión:
+
+| **Ejemplos**                          | **Retos**                    |
+|---------------------------------------|------------------------------|
+| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
+| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
+| [Ejemplo 3](./work/Ejemplos/Ejemplo3) |  |
+
+
 <br>
 
 [**`Siguiente`** -> Sesión 06](../Sesion6)
+
 [**`Anterior`** -> Sesión 04](../Sesion4)
 <br>
 

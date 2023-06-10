@@ -4,9 +4,18 @@ Spring MVC RestDocs es una herramienta valiosa para generar documentación preci
 
 <img align="right" src="https://www.baeldung.com/wp-content/uploads/2016/05/docs.png" width="600"/>
 
+## Contenidos de la sesión:
+
+| **Ejemplos**                          | **Retos**                    |
+|---------------------------------------|------------------------------|
+| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
+| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
+| [Ejemplo 3](./work/Ejemplos/Ejemplo3) |  |
+
 <br>
 
 [**`Anterior`** -> Sesión 07](../Sesion7)
+
 <br>
 
 [**`Volver al Inicio`**](../../../)
