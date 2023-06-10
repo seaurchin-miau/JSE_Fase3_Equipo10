@@ -9,9 +9,9 @@ Spring Framework ofrece una serie de componentes, como el Manejador de Excepcion
 
 | **Ejemplos**                          | **Retos**                    |
 |---------------------------------------|------------------------------|
-| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
-| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
-| [Ejemplo 3](./work/Ejemplos/Ejemplo3) |  |
+| [Ejemplo 1](./Work/Ejemplos/Ejemplo1) | [Reto 1](./Work/Retos/Reto1) |
+| [Ejemplo 2](./Work/Ejemplos/Ejemplo2) | [Reto 2](./Work/Retos/Reto2) |
+| [Ejemplo 3](./Work/Ejemplos/Ejemplo3) |                              |
 
 
 <br>

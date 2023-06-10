@@ -8,9 +8,9 @@ Los servicios web RESTful se han convertido en una forma popular de crear y cons
 
 | **Ejemplos**                          | **Retos**                    |
 |---------------------------------------|------------------------------|
-| [Ejemplo 1](./work/Ejemplos/Ejemplo1) | [Reto 1](./work/Retos/Reto1) |
-| [Ejemplo 2](./work/Ejemplos/Ejemplo2) | [Reto 2](./work/Retos/Reto2) |
-|                                       | [Reto 3](./work/Retos/Reto3) |
+| [Ejemplo 1](./Work/Ejemplos/Ejemplo1) | [Reto 1](./Work/Retos/Reto1) |
+| [Ejemplo 2](./Work/Ejemplos/Ejemplo2) | [Reto 2](./Work/Retos/Reto2) |
+|                                       | [Reto 3](./Work/Retos/Reto3) |
 
 
 <br>
