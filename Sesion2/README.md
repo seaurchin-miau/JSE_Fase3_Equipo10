@@ -5,8 +5,8 @@ Los servicios web RESTful se han convertido en una forma popular de crear y cons
 <img align="right" src="https://miro.medium.com/v2/resize:fit:640/format:webp/0*m1a5BihFq8OL1dcG.png" width="600"/>
 
 <br>
-
 [**`Siguiente`** -> Sesión 03](../Sesion3)
+<br>
 [**`Anterior`** -> Sesión 01](../Sesion1)
 <br>
 
