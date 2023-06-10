@@ -1,3 +1,16 @@
-Spring Framework 5 y Spring Boot 2 son tecnologías ampliamente utilizadas en el desarrollo de aplicaciones empresariales en Java. Spring Framework es un framework de aplicación de código abierto que proporciona una base sólida y completa para construir aplicaciones Java. Proporciona características como un contenedor de inversión de control (IoC) y soporte para programación orientada a aspectos (AOP), lo que facilita la modularidad y el acoplamiento flexible entre los componentes de la aplicación. Spring Framework también ofrece módulos para abordar aspectos como acceso a bases de datos, desarrollo web y más.
+# Introducción a Spring Framework 5 y Spring Boot 2
 
-Por otro lado, Spring Boot es una extensión de Spring Framework que simplifica el desarrollo de aplicaciones. Proporciona configuración automática basada en convenciones y un conjunto de dependencias preconfiguradas, lo que facilita la creación de aplicaciones autocontenidas. Spring Boot también incluye un servidor web integrado, lo que permite una configuración y prueba rápidas de aplicaciones web.
+Spring Framework 5 y Spring Boot 2 son tecnologías esenciales en el desarrollo de aplicaciones empresariales en Java. 
+Spring Framework 5 ofrece una base sólida y modular con una amplia variedad de funcionalidades, mientras que Spring Boot 2 
+simplifica el desarrollo al proporcionar una configuración automática y un conjunto de dependencias preconfiguradas. 
+Ambas tecnologías permiten crear aplicaciones empresariales eficientes, escalables y de alta calidad de manera más rápida y sencilla.
+
+<img align="right" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*aqcdPeSh2ZsFz9T_bZm0SQ.jpeg" width="600"/>
+
+<br>
+
+[**`Siguiente`** -> Sesión 02](../Sesion2)
+
+<br>
+
+[**`Volver al Inicio`**](../../../)
