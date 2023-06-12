@@ -16,7 +16,7 @@ Para ejecutar el proyecto utilizaremos el comando <b>"./mvnw spring-boot:run"</b
 nuestro puerto 8080 <b>(http://localhost:8080/)</b> y ver la siguiente pantalla
 </li>
 <img src= ./Img/screen2.png>
-<img src= ./Img/screen3.png>
+<img src= ./Img/screen34.png>
 <li>
 Puesto que la aplicación está completamente contenida en un archivo jar, también es posible ejecutarla de otra forma.
 Abrimos una terminal en el directorio "target", donde se encuentra nuestro archivo jar y ejecutamos el comando: <br>
