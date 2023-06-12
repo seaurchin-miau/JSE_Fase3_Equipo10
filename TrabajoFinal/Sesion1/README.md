@@ -23,4 +23,4 @@ Abrimos una terminal en el directorio "target", donde se encuentra nuestro archi
 <b>java -jar Sesion1-0.0.1-SNAPSHOT.jar</b><br>
 Con ello se levantará nuevamente nuestra app en el puerto 8080.
 </li>
-<img src= ./Img/screen4.png>
+<img src= ./Img/screen34.png>
