@@ -4,3 +4,13 @@ En este Postwork se creó la estructura de directorios que tendrá el proyeto fi
 modelos y sus respectivos controladores junto con sus métodos CRUD generales.
 
 <img src = "./Img/screenPW2.png">
+
+Paquetes con las clases:
+
+-[Model](../src/main/java/Postwork/FinalProject/model)
+
+-[Controller](../src/main/java/Postwork/FinalProject/controller)
+
+
+[**`Volver al Inicio`**](../../../)
+
