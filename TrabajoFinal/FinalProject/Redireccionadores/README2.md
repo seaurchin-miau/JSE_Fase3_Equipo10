@@ -1,0 +1,6 @@
+# Postwork #2
+
+En este Postwork se creó la estructura de directorios que tendrá el proyeto final, así como las clases para los 
+modelos y sus respectivos controladores junto con sus métodos CRUD generales.
+
+<img src = "./Img/screenPW2.png">
