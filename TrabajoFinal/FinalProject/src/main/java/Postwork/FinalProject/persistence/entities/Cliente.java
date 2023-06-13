@@ -1,4 +1,4 @@
-package Postwork.FinalProject.model;
+package Postwork.FinalProject.persistence.entities;
 
 import Postwork.FinalProject.validation.Name;
 import jakarta.validation.constraints.*;
