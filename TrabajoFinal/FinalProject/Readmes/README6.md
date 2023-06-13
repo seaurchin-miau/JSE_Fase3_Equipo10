@@ -3,7 +3,7 @@
 En este Postwork agregamos las dependencias de Lombok y MapStruct en el archivo build.gradle del proyecto.
 Despues a los objetos del paquete model les agregamos las anotaciones de Lombok: @Data, @Builder y @RequiredArgsConstructor
 <br>
-<img src = "./Img/screenPW5_0.png">
+<img src = "./Img/screenPW5_1.png">
 <br>
 
 En este Postwork agregamos un manejador de errores a nuestro proyecto.
@@ -19,7 +19,7 @@ En el paquete **exception** se crean las clases que extenderán  de Runtime Exce
 de modo que al detectarse ese tipo de excepción se ejecuten y finalmente el modelo 
 ErrorResponse contendrá la estructura del mensaje de respuesta de la excepción.
 <br>
-<img src = "./Img/screenPW5_1.png">
+<img src = "./Img/screenPW5_2.png">
 <br>
 Por otro lado, también hemos se realizaron cambios en las clases **service** para que
 se implementaran las pruebas de validación y se ejecutaran las excepciones respectivamente.
