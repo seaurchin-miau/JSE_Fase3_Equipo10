@@ -1,5 +1,11 @@
 # Postwork #5
 
+En este Postwork agregamos las dependencias de Lombok y MapStruct en el archivo build.gradle del proyecto.
+Despues a los objetos del paquete model les agregamos las anotaciones de Lombok: @Data, @Builder y @RequiredArgsConstructor
+<br>
+<img src = "./Img/screenPW5_0.png">
+<br>
+
 En este Postwork agregamos un manejador de errores a nuestro proyecto.
 Un manejador de errores ayudará a los usuarios de nuestra API a entender 
 mejor la naturaleza de un error, ya sea que esté enviando un parámetro 
@@ -22,7 +28,6 @@ se implementaran las pruebas de validación y se ejecutaran las excepciones resp
 <br>
 Al ejecutar nuestra app y mandar una petición errónea podemos visualizar
 un mensaje más detallado del motivo de dicho error.
-<img src = "./Img/screenPW5_1.png">
 <br>
 
 Paquetes con las clases:
