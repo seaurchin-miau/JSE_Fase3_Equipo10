@@ -1,33 +1,22 @@
 # Postwork #5
 
 En este Postwork agregamos las dependencias de Lombok y MapStruct en el archivo build.gradle del proyecto.
-Despues a los objetos del paquete model les agregamos las anotaciones de Lombok: @Data, @Builder y @RequiredArgsConstructor
+<br>
 <br>
 <img src = "./Img/screenPW5_0.png">
 <br>
 
-En este Postwork agregamos un manejador de errores a nuestro proyecto.
-Un manejador de errores ayudará a los usuarios de nuestra API a entender 
-mejor la naturaleza de un error, ya sea que esté enviando un parámetro 
-incorrecto, o que algo haya salido mal del lado del servidor.
-Para ello, hemos creado 3 nuevos paquetes. En el paquete <b>config</b> se encuentra
-la clase *GlobalExceptionHandler*, donde se usan las anotaciones
-<b>@ControllerAdvice</b> y <b>@ExceptionHandler</b>, que indican la respuesta HTTP
-obtenida cuando se lleve a cabo determinada excepcion; además de encargarse
-de devolvernos un mensaje de vuelta con contenido más detallado del error.
-En el paquete **exception** se crean las clases que extenderán  de Runtime Exception, 
-de modo que al detectarse ese tipo de excepción se ejecuten y finalmente el modelo 
-ErrorResponse contendrá la estructura del mensaje de respuesta de la excepción.
+Despues a los objetos del paquete model les agregamos las anotaciones de Lombok: @Data, @Builder y @RequiredArgsConstructor.
+<br>
 <br>
 <img src = "./Img/screenPW5_1.png">
 <br>
-Por otro lado, también hemos se realizaron cambios en las clases **service** para que
-se implementaran las pruebas de validación y se ejecutaran las excepciones respectivamente.
+Por ultimo, dentro del paquete controllers agregamos un subpaquete mappers y agregamos una interface de mapper para cada uno de los tipos de objetos en el paquete model (excluyendo RespuestaError). 
+Tambien agregamos a cada interfaz con @Mapper.
+<br>
 <br>
 <img src = "./Img/screenPW5_2.png">
 <br>
-Al ejecutar nuestra app y mandar una petición errónea podemos visualizar
-un mensaje más detallado del motivo de dicho error.
 <br>
 
 Paquetes con las clases:
