@@ -18,7 +18,7 @@ Integrantes:
 | [Sesión 1](./Sesion1) | Introducción a Spring Framework 5 y Spring Boot 2| [Postwork #1](./TrabajoFinal/Sesion1)                       |
 | [Sesión 2](./Sesion2) | Servicios web Restful con Spring MVC | [Postwork #2](TrabajoFinal/FinalProject/Readmes/README2.md) |
 | [Sesión 3](./Sesion3) | Spring MVC validation | [Postwork #3](TrabajoFinal/FinalProject/Readmes/README3.md) |
-| [Sesión 4](./Sesion4) | Manejo de errores y negociación de contenido |                                                             |
+| [Sesión 4](./Sesion4) | Manejo de errores y negociación de contenido | [Postwork #4](TrabajoFinal/FinalProject/Readmes/README4.md) |
 | [Sesión 5](./Sesion5) |Project Lombok y MapStruct |                                                             |
 | [Sesión 6](./Sesion6) |Spring Data JPA |                                                             |
 | [Sesión 7](./Sesion7) |Pruebas unitarias con Spring Boot y Junit 5|                                                             |

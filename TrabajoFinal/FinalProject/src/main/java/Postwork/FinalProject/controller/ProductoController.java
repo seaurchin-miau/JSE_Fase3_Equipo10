@@ -41,11 +41,13 @@ public class ProductoController {
     }
 
     @PutMapping("/{productoId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void actualizaProducto(@PathVariable Long productoId, @RequestBody @Valid UpdatedProducto producto){
         inventario.update(productoId, producto);
     }
 
     @DeleteMapping("/{productoId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void eliminaProducto(@PathVariable Long productoId){
         inventario.remove(productoId);
     }

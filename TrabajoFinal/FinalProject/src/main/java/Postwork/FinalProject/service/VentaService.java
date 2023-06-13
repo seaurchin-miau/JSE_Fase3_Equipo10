@@ -1,5 +1,6 @@
 package Postwork.FinalProject.service;
 
+import Postwork.FinalProject.exception.NotFoundException;
 import Postwork.FinalProject.model.Cliente;
 import Postwork.FinalProject.model.Producto;
 import Postwork.FinalProject.model.Venta;
@@ -37,6 +38,10 @@ public class VentaService {
 
     }
 
+    public boolean exists(Long ventaId){
+        return listaVentas.containsKey(ventaId);
+    }
+
 
     /*public List<Venta> getAll(Long Id) {
         List<Venta> ventas = new LinkedList<>();
@@ -52,6 +57,10 @@ public class VentaService {
     }*/
 
     public Venta getOne(Long ventaId){
+        if (!exists(ventaId)) {
+            throw new NotFoundException("Venta with Id: " + ventaId.toString());
+        }
+
         return listaVentas.get(ventaId);
     }
 
@@ -60,12 +69,23 @@ public class VentaService {
     }*/
 
     public void update(Long ventaId, UpdatedVenta venta){
+        if (!exists(ventaId)) {
+            throw new NotFoundException("Venta with Id: " + ventaId.toString());
+        }
+
         Venta current = listaVentas.get(ventaId);
-        current.setMonto(venta.getMonto());
-        current.setProductos(venta.getProductos());
+
+
+            current.setMonto(venta.getMonto());
+            current.setProductos(venta.getProductos());
+
     }
 
     public void remove(Long ventaId){
+        if (!exists(ventaId)) {
+            throw new NotFoundException("Venta with Id: " + ventaId.toString());
+        }
+
         listaVentas.remove(ventaId);
     }
 

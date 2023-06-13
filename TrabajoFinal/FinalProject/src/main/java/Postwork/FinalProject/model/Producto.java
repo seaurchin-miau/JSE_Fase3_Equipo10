@@ -22,7 +22,7 @@ public class Producto {
     @DecimalMin(value = "1.00", inclusive = true)
     private float precio;
 
-    @Pattern(regexp = "^(\\d{3}[-]?){2}\\d{4}$")
+
     private String numeroRegistro;
 
     @PastOrPresent

@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
 
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
-@Constraint(validatedBy = IdValidator.class)
+@Constraint(validatedBy = OtherNamesValidator.class)
 public @interface OtherNames {
 
     String message() default "Ingrese un nombre entre 5 y 20 caracteres";
