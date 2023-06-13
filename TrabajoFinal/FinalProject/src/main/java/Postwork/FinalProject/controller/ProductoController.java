@@ -1,43 +1,53 @@
 package Postwork.FinalProject.controller;
 
-import Postwork.FinalProject.model.Cliente;
-import Postwork.FinalProject.model.Etapa;
 import Postwork.FinalProject.model.Producto;
+import Postwork.FinalProject.model.updateClasses.UpdatedProducto;
+import Postwork.FinalProject.service.ProductoService;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
-import java.util.LinkedList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/producto")
 public class ProductoController {
 
+
+    private ProductoService inventario;
+    @Autowired
+    public ProductoController(ProductoService inventario){
+        this.inventario = inventario;
+    }
+
+
     @GetMapping
-    public ResponseEntity<List<Producto>> getProductos(){
-        return ResponseEntity.ok(new LinkedList<>());
+    @ResponseStatus(HttpStatus.OK)
+    public List<Producto> getProductos(){
+        return inventario.getAll();
     }
 
     @GetMapping("/{productoId}")
-    public ResponseEntity<Producto> getProducto(@PathVariable Long productoId){
-        return ResponseEntity.ok(new Producto());
+    @ResponseStatus(HttpStatus.OK)
+    public Producto getProducto(@PathVariable Long productoId){
+        return inventario.getOne(productoId);
     }
 
     @PostMapping
-    public ResponseEntity<Void> creaProducto(@RequestBody Producto producto){
-        return ResponseEntity.created(URI.create("")).build();
+    @ResponseStatus(HttpStatus.CREATED)
+    public Producto creaProducto(@RequestBody @Valid Producto producto){
+        return inventario.add(producto);
     }
 
     @PutMapping("/{productoId}")
-    public ResponseEntity<Void> actualizaProducto(@PathVariable Long productoId, @RequestBody Producto producto){
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    public void actualizaProducto(@PathVariable Long productoId, @RequestBody @Valid UpdatedProducto producto){
+        inventario.update(productoId, producto);
     }
 
-    @DeleteMapping("/{productoId]")
-    public ResponseEntity<Void> eliminaProducto(@PathVariable Long productoId){
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    @DeleteMapping("/{productoId}")
+    public void eliminaProducto(@PathVariable Long productoId){
+        inventario.remove(productoId);
     }
 
 }

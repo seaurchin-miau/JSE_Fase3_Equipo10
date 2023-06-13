@@ -1,8 +1,7 @@
 package Postwork.FinalProject.controller;
 
-import Postwork.FinalProject.model.Cliente;
-import Postwork.FinalProject.model.Etapa;
 import Postwork.FinalProject.model.Visita;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -26,16 +25,16 @@ public class VisitaController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> creaVisita(@RequestBody Visita visita, @RequestParam Long clienteId){
-        return ResponseEntity.created(URI.create("")).build();
+    public ResponseEntity<Void> creaVisita(@RequestBody @Valid Visita visita){
+        return ResponseEntity.created(URI.create("1")).build();
     }
 
     @PutMapping("/{visitaId}")
-    public ResponseEntity<Void> actualizaVisita(@PathVariable Long visitaId, @RequestBody Visita visita){
+    public ResponseEntity<Void> actualizaVisita(@PathVariable Long visitaId, @RequestBody @Valid Visita visita){
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 
-    @DeleteMapping("/{visitaId]")
+    @DeleteMapping("/{visitaId}")
     public ResponseEntity<Void> eliminaVisita(@PathVariable Long visitaId){
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }

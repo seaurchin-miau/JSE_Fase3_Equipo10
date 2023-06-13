@@ -1,42 +1,57 @@
 package Postwork.FinalProject.controller;
 
 import Postwork.FinalProject.model.Cliente;
+import Postwork.FinalProject.model.updateClasses.UpdatedCliente;
+import Postwork.FinalProject.service.ClienteService;
+import jakarta.validation.Valid;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 @RestController
 @RequestMapping("/cliente")
+@Validated
 public class ClienteController {
 
+    private ClienteService agenda;
+
+    @Autowired
+    public ClienteController(ClienteService agenda) {
+        this.agenda = agenda;
+    }
+
+
     @GetMapping
-    public ResponseEntity <List<Cliente>> getClientes(){
-        return ResponseEntity.ok(new LinkedList<>());
+    @ResponseStatus(HttpStatus.OK)
+    public List<Cliente> getClientes(){
+        return agenda.getAll();
     }
 
     @GetMapping("/{clienteId}")
-    public ResponseEntity<Cliente> getCliente(@PathVariable Long clienteId){
-        return ResponseEntity.ok(new Cliente());
+    @ResponseStatus(HttpStatus.OK)
+    public Cliente getCliente(@PathVariable Long clienteId){
+        return agenda.getOne(clienteId);
     }
 
     @PostMapping
-    public ResponseEntity<Void> creaCliente(@RequestBody Cliente cliente){
-        return ResponseEntity.created(URI.create("")).build();
+    @ResponseStatus(HttpStatus.CREATED)
+    public Cliente creaCliente(@Valid @RequestBody Cliente cliente){
+        return agenda.add(cliente);
     }
 
     @PutMapping("/{clienteId}")
-    public ResponseEntity<Void> actualizaCliente(@PathVariable Long clienteId, @RequestBody Cliente cliente){
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void actualizaCliente(@PathVariable Long clienteId, @Valid @RequestBody UpdatedCliente cliente){
+        agenda.update(clienteId, cliente);
     }
 
-    @DeleteMapping("/{clienteId]")
-    public ResponseEntity<Void> eliminaCliente(@PathVariable Long cienteId){
-        return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+    @DeleteMapping("/{clienteId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void eliminaCliente(@PathVariable Long cienteId){
+        agenda.remove(cienteId);
     }
 
 }

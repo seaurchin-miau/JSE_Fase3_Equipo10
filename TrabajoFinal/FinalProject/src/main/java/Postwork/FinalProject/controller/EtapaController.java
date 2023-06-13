@@ -1,7 +1,7 @@
 package Postwork.FinalProject.controller;
 
-import Postwork.FinalProject.model.Cliente;
 import Postwork.FinalProject.model.Etapa;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -25,16 +25,16 @@ public class EtapaController {
     }
 
     @PostMapping
-    public ResponseEntity<Void> creaEtapa(@RequestBody Etapa etapa, @RequestParam Long clienteId){
+    public ResponseEntity<Void> creaEtapa(@RequestBody @Valid Etapa etapa, @RequestParam Long clienteId){
         return ResponseEntity.created(URI.create("")).build();
     }
 
     @PutMapping("/{etapaId}")
-    public ResponseEntity<Void> actualizaEtapa(@PathVariable Long etapaId, @RequestBody Etapa etapa){
+    public ResponseEntity<Void> actualizaEtapa(@PathVariable Long etapaId, @RequestBody @Valid Etapa etapa){
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 
-    @DeleteMapping("/{etapaId]")
+    @DeleteMapping("/{etapaId}")
     public ResponseEntity<Void> eliminaEtapa(@PathVariable Long etapaId){
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
