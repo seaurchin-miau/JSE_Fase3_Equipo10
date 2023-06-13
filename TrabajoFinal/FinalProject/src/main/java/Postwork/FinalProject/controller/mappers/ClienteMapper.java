@@ -1,7 +1,10 @@
-package org.bedu.java.backend.crm.controllers.mappers;
+package Postwork.FinalProject.controller.mappers;
 
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ClienteMapper {
+    Cliente clienteModelToClienteEntity(Postwork.FinalProject.model.Cliente clienteModel);
+
+    Postwork.FinalProject.model.Cliente clienteEntityToClienteModel(Cliente cliente);
 }

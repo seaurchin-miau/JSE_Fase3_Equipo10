@@ -1,4 +1,4 @@
-package org.bedu.java.backend.crm.persistence;
+package Postwork.FinalProject.persistence;
 
 import org.bedu.java.backend.crm.persistence.entities.Visita;
 import org.springframework.data.jpa.repository.JpaRepository;
