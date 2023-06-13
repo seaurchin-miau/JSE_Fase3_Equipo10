@@ -3,41 +3,19 @@ package Postwork.FinalProject.model;
 import Postwork.FinalProject.validation.OtherNames;
 import jakarta.validation.constraints.*;
 
+@Data
+@Builder
+@RequiredArgsConstructor
 public class Etapa {
 
-    @NotNull
-    @PositiveOrZero
+    @PositiveOrZero(message = "El identificador de la etapa no puede ser un número negativo")
     private long etapaId;
 
-    @OtherNames
+    @NotEmpty(message = "El nombre de la etapa no puede estar en blanco.")
+    @Size(min = 4, max = 30, message = "El nombre de la etapa debe tener entre 4 y 30 letras.")
     private String name;
 
-    @PositiveOrZero
-    @NotEmpty
+    @Positive(message = "La etapa debe tener un orden positivo mayor a cero")
     private int orden;
 
-
-    public long getEtapaId() {
-        return etapaId;
-    }
-
-    public void setEtapaId(long etapaId) {
-        this.etapaId = etapaId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getOrden() {
-        return orden;
-    }
-
-    public void setOrden(int orden) {
-        this.orden = orden;
-    }
 }

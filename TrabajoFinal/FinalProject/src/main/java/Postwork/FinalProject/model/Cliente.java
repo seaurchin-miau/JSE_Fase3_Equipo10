@@ -3,72 +3,26 @@ package Postwork.FinalProject.model;
 import Postwork.FinalProject.validation.Name;
 import jakarta.validation.constraints.*;
 
+@Data
+@Builder
+@RequiredArgsConstructor
 public class Cliente {
 
-    @NotNull
-    @PositiveOrZero
+    @PositiveOrZero(message = "El identificador no puede ser un número negativo")
     private long id;
 
-    @Name
+    @NotEmpty(message = "El nombre del cliente no puede estar vacío")
+    @Size(min = 5, max = 30, message = "El nombre del cliente debe tener al menos 5 letras y ser menor a 30")
     private String name;
 
     @Email
-    @NotEmpty
     private String email;
 
-    @PositiveOrZero
-    @Max(value = 10000)
+    @Min(value = 10, message = "Los clientes con menos de 10 empleados no son válidos")
+    @Max(value = 10000, message = "Los clientes con más de 10000 empleados no son válidos")
     private int numeroEmpleados;
 
-    @NotBlank
+    @NotBlank(message = "Se debe proporcionar una dirección")
     private String address;
 
-
-    public Cliente(long id, String name, String email, int numeroEmpleados, String address) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.numeroEmpleados = numeroEmpleados;
-        this.address = address;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public int getNumeroEmpleados() {
-        return numeroEmpleados;
-    }
-
-    public void setNumeroEmpleados(int numeroEmpleados) {
-        this.numeroEmpleados = numeroEmpleados;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }

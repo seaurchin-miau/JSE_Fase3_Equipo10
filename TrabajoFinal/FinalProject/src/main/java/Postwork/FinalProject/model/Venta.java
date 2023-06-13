@@ -5,60 +5,24 @@ import jakarta.validation.constraints.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
+@Data
+@Builder
+@RequiredArgsConstructor
 public class Venta {
 
-    @NotNull
-    @PositiveOrZero
+    @PositiveOrZero(message = "El identificador de la venta no puede ser un número negativo")
     private long ventaId;
 
-    @NotNull
-    @DecimalMin(value = "1.00", inclusive = true)
+    @DecimalMin(value = "1.00", inclusive = true, message = "La venta debe ser de al menos 1.00")
     private float monto;
 
-    @NotNull
+    @NotEmpty(message = "La venta debe tener por lo menos un producto.")
     private List<Producto> productos;
 
-    @NotNull
+    @NotNull(message = "La venta debe haberse realizado a algún cliente.")
     private Cliente cliente;
 
-
-    public Venta(long ventaId, float monto, List<Producto> productos, Cliente cliente) {
-        this.ventaId = ventaId;
-        this.monto = monto;
-        this.productos = productos;
-        this.cliente = cliente;
-    }
-
-    public long getVentaId() {
-        return ventaId;
-    }
-
-    public void setVentaId(long ventaId) {
-        this.ventaId = ventaId;
-    }
-
-    public float getMonto() {
-        return monto;
-    }
-
-    public void setMonto(float monto) {
-        this.monto = monto;
-    }
-
-    public List<Producto> getProductos() {
-        return productos;
-    }
-
-    public void setProductos(List<Producto> productos) {
-        this.productos = productos;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
-    }
+    @PastOrPresent(message = "La venta no puede ocurrir en el futuro.")
+    private LocalDateTime fechaCreacion;
 
 }

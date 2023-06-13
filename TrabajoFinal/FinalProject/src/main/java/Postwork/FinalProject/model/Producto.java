@@ -5,84 +5,29 @@ import jakarta.validation.constraints.*;
 
 import java.time.LocalDate;
 
+@Data
+@Builder
+@RequiredArgsConstructor
 public class Producto {
 
-
-    @NotNull
-    @PositiveOrZero
+    @PositiveOrZero(message = "El identificador del producto no puede ser un número negativo")
     private long productoId;
 
-    @OtherNames
+    @NotEmpty(message = "El nombre del producto no puede estar en blanco.")
+    @Size(min = 4, max = 30, message = "El nombre del producto debe tener entre 4 y 30 letras.")
     private String name;
 
     @NotBlank
     private String categoria;
 
-    @NotNull
-    @DecimalMin(value = "1.00", inclusive = true)
+    @DecimalMin(value = "1.00", inclusive = true, message = "El precio del producto debe ser de al menos 1.00")
     private float precio;
 
-
+    @NotEmpty(message = "El núemero de registro del producto no puede estar en blanco.")
+    @Pattern(regexp = "^(\\d{3}[-]?){2}\\d{4}$")
     private String numeroRegistro;
 
-    @PastOrPresent
+    @PastOrPresent(message = "La fecha de creación del producto no puede ocurrir en el futuro.")
     private LocalDate creacion;
 
-
-    public Producto(long productoId, String name, String categoria, float precio, String numeroRegistro, LocalDate creacion) {
-        this.productoId = productoId;
-        this.name = name;
-        this.categoria = categoria;
-        this.precio = precio;
-        this.numeroRegistro = numeroRegistro;
-        this.creacion = creacion;
-    }
-
-    public long getProductoId() {
-        return productoId;
-    }
-
-    public void setProductoId(long productoId) {
-        this.productoId = productoId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public float getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(float precio) {
-        this.precio = precio;
-    }
-
-    public String getNumeroRegistro() {
-        return numeroRegistro;
-    }
-
-    public void setNumeroRegistro(String numeroRegistro) {
-        this.numeroRegistro = numeroRegistro;
-    }
-
-    public LocalDate getCreacion() {
-        return creacion;
-    }
-
-    public void setCreacion(LocalDate creacion) {
-        this.creacion = creacion;
-    }
 }
