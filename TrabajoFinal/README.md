@@ -1,4 +1,4 @@
-#Descripción del trabajo final
+# Descripción del trabajo final
 
 El proyecto consta del desarrollo de un sistema de software CRM (Customer Relationship Management, Gestión de Relaciones con el Cliente), que fue diseñado utilizando diversas tecnologías y marcos de trabajo de Spring, ampliamente utilizads en el desarrollo de aplicaciones empresariales. Aquí hay una breve descripción de cómo se aplicaron:
  1) Spring Framework 5 y Spring Boot 2: El sistema se basa en el poderoso framework de Spring, específicamente en su versión 5, que proporciona un conjunto de características para el desarrollo de aplicaciones Java de manera eficiente. Spring Boot 2 se utiliza para simplificar la configuración y el despliegue de la aplicación.
@@ -10,5 +10,5 @@ El proyecto consta del desarrollo de un sistema de software CRM (Customer Relati
 7) Pruebas unitarias con Spring Boot y Junit 5: Se han implementado pruebas unitarias utilizando Junit 5, el marco de pruebas estándar para aplicaciones Java. Spring Boot proporciona un entorno de prueba integrado que facilita la escritura y ejecución de pruebas unitarias de componentes específicos.
 8) Spring MVC RestDoc: Para la generación automática de documentación de API, se utiliza Spring MVC RestDoc. Esta herramienta genera documentación legible por humanos a partir de pruebas unitarias existentes, lo que facilita la creación de documentación precisa y actualizada.
 
-<img align="center" src="https://www.perfectviewcrm.com/wp-content/uploads/sites/7/2018/08/PerfectView-What-is-CRM.png" width="500"/>
+<img align="center" src="https://www.perfectviewcrm.com/wp-content/uploads/sites/7/2018/08/PerfectView-What-is-CRM.png" width="300"/>
 
