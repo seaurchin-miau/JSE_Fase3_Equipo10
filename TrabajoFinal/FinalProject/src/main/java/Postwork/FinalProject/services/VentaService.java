@@ -1,4 +1,4 @@
-package Postwork.FinalProject.service;
+package Postwork.FinalProject.services;
 
 import Postwork.FinalProject.exception.NotFoundException;
 import Postwork.FinalProject.model.Cliente;

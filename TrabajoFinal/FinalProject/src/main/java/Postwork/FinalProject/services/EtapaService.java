@@ -1,4 +1,4 @@
-package Postwork.FinalProject.service;
+package Postwork.FinalProject.services;
 
 
 import lombok.RequiredArgsConstructor;
