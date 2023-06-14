@@ -13,24 +13,20 @@ import java.time.LocalDate;
 @Entity
 public class Producto {
 
-    @PositiveOrZero(message = "El identificador del producto no puede ser un número negativo")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long productoId;
 
-    @NotEmpty(message = "El nombre del producto no puede estar en blanco.")
-    @Size(min = 4, max = 30, message = "El nombre del producto debe tener entre 4 y 30 letras.")
     private String name;
 
-    @NotBlank
     private String categoria;
 
-    @DecimalMin(value = "1.00", inclusive = true, message = "El precio del producto debe ser de al menos 1.00")
     private float precio;
 
-    @NotEmpty(message = "El núemero de registro del producto no puede estar en blanco.")
-    @Pattern(regexp = "^(\\d{3}[-]?){2}\\d{4}$")
+    @Column(name = "numero_registro", length = 20)
     private String numeroRegistro;
 
-    @PastOrPresent(message = "La fecha de creación del producto no puede ocurrir en el futuro.")
+    @Column(name = "fecha_creacion")
     private LocalDate creacion;
 
 }

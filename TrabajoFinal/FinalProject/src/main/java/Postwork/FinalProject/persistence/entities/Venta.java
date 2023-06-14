@@ -13,19 +13,19 @@ import java.util.List;
 @Entity
 public class Venta {
 
-    @PositiveOrZero(message = "El identificador de la venta no puede ser un número negativo")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long ventaId;
 
-    @DecimalMin(value = "1.00", inclusive = true, message = "La venta debe ser de al menos 1.00")
     private float monto;
 
-    @NotEmpty(message = "La venta debe tener por lo menos un producto.")
+    @OneToMany
     private List<Producto> productos;
 
-    @NotNull(message = "La venta debe haberse realizado a algún cliente.")
+    @ManyToOne
     private Cliente cliente;
 
-    @PastOrPresent(message = "La venta no puede ocurrir en el futuro.")
+    @Column(nullable = false)
     private LocalDateTime fechaCreacion;
 
 }
