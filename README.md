@@ -22,7 +22,7 @@ Integrantes:
 | [Sesión 5](./Sesion5)           | Project Lombok y MapStruct                        | [Postwork #5](./TrabajoFinal/FinalProject/Readmes/README5.md) |
 | [Sesión 6](./Sesion6)           | Spring Data JPA                                   | [Postwork #6](./TrabajoFinal/FinalProject/Readmes/README6.md) |
 | [Sesión 7](./Sesion7)           | Pruebas unitarias con Spring Boot y Junit 5       | [Postwork #7](./TrabajoFinal/FinalProject/Readmes/README7.md) |
-| [Sesión 8](./Sesion8)           | Spring MVC RestDoc                                |                                                               |
+| [Sesión 8](./Sesion8)           | Spring MVC RestDoc                                | [Postwork #8](./TrabajoFinal/FinalProject/Readmes/README8.md) |
 | [Trabajo Final](./TrabajoFinal) | Carpeta raíz de todos los Postworks               | [Descripción del contenido](./TrabajoFinal)                   |
 
 <img align="right" src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="catCoding" width="300"/>
