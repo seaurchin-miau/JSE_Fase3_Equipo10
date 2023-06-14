@@ -21,7 +21,7 @@ Integrantes:
 | [Sesión 4](./Sesion4)           | Manejo de errores y negociación de contenido      | [Postwork #4](./TrabajoFinal/FinalProject/Readmes/README4.md) |
 | [Sesión 5](./Sesion5)           | Project Lombok y MapStruct                        | [Postwork #5](./TrabajoFinal/FinalProject/Readmes/README5.md) |
 | [Sesión 6](./Sesion6)           | Spring Data JPA                                   | [Postwork #6](./TrabajoFinal/FinalProject/Readmes/README6.md) |
-| [Sesión 7](./Sesion7)           | Pruebas unitarias con Spring Boot y Junit 5       |                                                               |
+| [Sesión 7](./Sesion7)           | Pruebas unitarias con Spring Boot y Junit 5       | [Postwork #7](./TrabajoFinal/FinalProject/Readmes/README7.md) |
 | [Sesión 8](./Sesion8)           | Spring MVC RestDoc                                |                                                               |
 | [Trabajo Final](./TrabajoFinal) | Carpeta raíz de todos los Postworks               | [Descripción del contenido](./TrabajoFinal)                   |
 
