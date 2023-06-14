@@ -9,7 +9,7 @@ Paquetes con las clases:
 
 -[Model](../src/main/java/Postwork/FinalProject/model)
 
--[Controller](../src/main/java/Postwork/FinalProject/controller)
+-[Controller](../src/main/java/Postwork/FinalProject/controllers)
 
 
 [**`Volver al Inicio`**](../../../)

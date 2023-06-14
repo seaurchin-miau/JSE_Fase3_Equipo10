@@ -25,9 +25,9 @@ Paquetes con las clases:
 
 -[Model](../src/main/java/Postwork/FinalProject/model)
 
--[Controller](../src/main/java/Postwork/FinalProject/controller)
+-[Controller](../src/main/java/Postwork/FinalProject/controllers)
 
--[Service](../src/main/java/Postwork/FinalProject/service)
+-[Service](../src/main/java/Postwork/FinalProject/services)
 
 -[Validation](../src/main/java/Postwork/FinalProject/validation)
 

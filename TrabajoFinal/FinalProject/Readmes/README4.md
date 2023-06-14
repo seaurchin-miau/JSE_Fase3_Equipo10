@@ -33,7 +33,7 @@ Paquetes con las clases:
 
 -[Exception](../src/main/java/Postwork/FinalProject/exception)
 
--[Service](../src/main/java/Postwork/FinalProject/service)
+-[Service](../src/main/java/Postwork/FinalProject/services)
 
 -[Config](../src/main/java/Postwork/FinalProject/config)
 
