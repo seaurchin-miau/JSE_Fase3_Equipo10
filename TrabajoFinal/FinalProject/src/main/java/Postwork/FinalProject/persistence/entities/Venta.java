@@ -5,10 +5,12 @@ import jakarta.validation.constraints.*;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "VENTAS")
 @Entity
-@RequiredArgsConstructor
 public class Venta {
 
     @PositiveOrZero(message = "El identificador de la venta no puede ser un número negativo")

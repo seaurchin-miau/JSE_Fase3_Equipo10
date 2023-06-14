@@ -3,10 +3,11 @@ package Postwork.FinalProject.persistence.entities;
 import Postwork.FinalProject.validation.OtherNames;
 import jakarta.validation.constraints.*;
 
-@Data
-@Table(name = "ETAPAS")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor@Table(name = "ETAPAS")
 @Entity
-@RequiredArgsConstructor
 public class Etapa {
 
     @PositiveOrZero(message = "El identificador de la etapa no puede ser un número negativo")

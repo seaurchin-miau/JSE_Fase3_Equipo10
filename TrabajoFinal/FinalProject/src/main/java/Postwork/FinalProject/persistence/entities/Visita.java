@@ -10,10 +10,12 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDateTime;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "VISITAS")
 @Entity
-@RequiredArgsConstructor
 public class Visita {
 
     @PositiveOrZero(message = "El identificador de la visita no puede ser un número negativo.")

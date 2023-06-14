@@ -3,10 +3,12 @@ package Postwork.FinalProject.persistence.entities;
 import Postwork.FinalProject.validation.Name;
 import jakarta.validation.constraints.*;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "CLIENTES")
 @Entity
-@RequiredArgsConstructor
 public class Cliente {
 
     @PositiveOrZero(message = "El identificador no puede ser un número negativo")
