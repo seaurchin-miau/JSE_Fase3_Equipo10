@@ -1,16 +1,15 @@
-# Postwork #6
+# Postwork #7
 
-En este Postwork agregamos el driver de MySQL como dependencia del proyecto. Luego creamos un nuevo paquete llamado entities, dentro del paquete persistence, el cual contiene una copia de las entidades contenidas en el paquete model, y luego le pusimos las anotaciones de JPA en lugar de las validaciones. Y despues creamos un repositorio para cada una de las entidades (interface que extiende de JpaRepository).
+En este Postwork terminamos la implementación de los métodos de negocio (capa services), esto nos permite tener las funcionalidades básicas CRUD para cada entidad (guardar, eliminar, baja y actualizacion).
 <br>
 <br>
-<img src = "./Img/screenPW6_1.png">
+<img src = "./Img/screenPW7_1.png">
 <br>
 
-Por ultimo, agregamos la dependencia de H2 a la aplicación, probamos la conexion e hicimos una prueba de consulta.
-
+Por ultimo, agregamos pruebas unitarias de cada uno de los métodos existentes en los controladores usando el objeto MockMvc de Spring.
 <br>
 <br>
-<img src = "./Img/screenPW6_2.png">
+<img src = "./Img/screenPW7_2.png">
 <br>
 
 
