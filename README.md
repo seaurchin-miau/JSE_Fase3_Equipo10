@@ -3,7 +3,7 @@ Repositorio de los trabajos de la fase 3 llevados a cabo por el equipo 10 del cu
  
 Integrantes:
 <ul>
-  <li>Jafeth Rosales           (rosalesjafeth36@gmail.com)</li>
+  <li>G. Jafeth Rosales           (rosalesjafeth36@gmail.com)</li>
   <li>Gregorio Abraham Jurado  (jurado.abraham@gmail.com) </li>
   <li> Anna Luz Gómez           (annaluzgp@gmail.com)</li>
 </ul>
