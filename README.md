@@ -25,5 +25,5 @@ Integrantes:
 | [Sesión 8](./Sesion8)           | Spring MVC RestDoc                                | [Postwork #8](./TrabajoFinal/FinalProject/Readmes/README8.md) |
 | [Trabajo Final](./TrabajoFinal) | Carpeta raíz de todos los Postworks               | [Descripción del contenido](./TrabajoFinal)                   |
 
-<img align="center" src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="catCoding" width="500"/>
+<img align="center" src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" alt="catCoding" width="300"/>
  </div>
