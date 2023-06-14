@@ -1,1 +1,14 @@
-Descripción del Postwork
+#Descripción del trabajo final
+
+El proyecto consta del desarrollo de un sistema de software CRM (Customer Relationship Management, Gestión de Relaciones con el Cliente), que fue diseñado utilizando diversas tecnologías y marcos de trabajo de Spring, ampliamente utilizads en el desarrollo de aplicaciones empresariales. Aquí hay una breve descripción de cómo se aplicaron:
+ 1) Spring Framework 5 y Spring Boot 2: El sistema se basa en el poderoso framework de Spring, específicamente en su versión 5, que proporciona un conjunto de características para el desarrollo de aplicaciones Java de manera eficiente. Spring Boot 2 se utiliza para simplificar la configuración y el despliegue de la aplicación.
+2) Servicios web Restful con Spring MVC: El sistema utiliza Spring MVC (Model-View-Controller) para construir servicios web RESTful. Spring MVC proporciona una arquitectura basada en controladores para desarrollar APIs web de manera estructurada y fácil de mantener.
+3) Spring MVC validation: Se utilizó la capacidad de validación de Spring MVC para asegurar que los datos enviados a través de los servicios web cumplan con ciertas reglas de validación. Esto ayuda a mantener la integridad y la consistencia de los datos.
+4) Manejo de errores HTTP y negociación de contenido: El sistema implementa una estrategia robusta para manejar y responder adecuadamente a los errores HTTP, proporcionando respuestas claras y significativas al cliente. Además, se utiliza la negociación de contenido para enviar respuestas en diferentes formatos según las preferencias del cliente (por ejemplo, JSON, XML).
+5) Project Lombok y MapStruct: Se utilizan Project Lombok y MapStruct para simplificar y agilizar el desarrollo de la capa de persistencia de datos. Lombok reduce la cantidad de código boilerplate al generar automáticamente getters, setters, constructores, etc. MapStruct se utiliza para mapear los objetos de dominio a entidades persistentes y viceversa.
+6) Spring Data JPA: El sistema aprovecha Spring Data JPA, que es una capa de abstracción sobre JPA (Java Persistence API). Spring Data JPA facilita la interacción con la base de datos al proporcionar una interfaz de repositorio para realizar operaciones CRUD (crear, leer, actualizar, eliminar) de manera sencilla y consistente.
+7) Pruebas unitarias con Spring Boot y Junit 5: Se han implementado pruebas unitarias utilizando Junit 5, el marco de pruebas estándar para aplicaciones Java. Spring Boot proporciona un entorno de prueba integrado que facilita la escritura y ejecución de pruebas unitarias de componentes específicos.
+8) Spring MVC RestDoc: Para la generación automática de documentación de API, se utiliza Spring MVC RestDoc. Esta herramienta genera documentación legible por humanos a partir de pruebas unitarias existentes, lo que facilita la creación de documentación precisa y actualizada.
+
+<img align="center" src="https://www.perfectviewcrm.com/wp-content/uploads/sites/7/2018/08/PerfectView-What-is-CRM.png" width="500"/>
+
